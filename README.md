@@ -63,17 +63,7 @@ Copy code
         |-- transmitted_signal.png  # Original modulated signal.
         |-- noisy_signal.png        # Signal after channel impairments.
         |-- received_signal.png     # Signal after amplification and compensation.
-|-- LICENSE
-|-- .gitignore
-Getting Started
-Prerequisites
-MATLAB or GNU Octave with the following toolboxes:
-Communications Toolbox
-Signal Processing Toolbox
-Installation
 
-cd optical-communication-fec
-Open MATLAB or GNU Octave and navigate to the src/ directory
 
 Usage
 Run the baseline system simulation:
@@ -100,6 +90,34 @@ Dispersion Handling	None	Compensated with DCF
 Results
 Key Observations:
 Baseline System:
+
+Results
+Bit Error Rate (BER) Comparison
+Simulation Scenario	BER Before FEC	BER After FEC
+Baseline System	0.02	N/A
+Enhanced System with FEC	0.02	0.001
+Eye Diagram Analysis
+Eye diagrams visualize signal quality and the impact of impairments:
+
+Without FEC:
+
+With FEC:
+
+Repository Structure
+plaintext
+Copy code
+optical-communication-simulation/
+├── baseline_simulation.m     % Simulates the baseline system
+├── enhanced_simulation.m     % Simulates the system with FEC
+├── plots/                    % Contains saved plots and diagrams
+│   ├── eye_diagrams/
+│   │   ├── without_fec.png
+│   │   └── with_fec.png
+├── README.md                 % Project documentation
+Future Improvements
+Explore advanced modulation techniques like QPSK or QAM.
+Implement higher-order FEC codes, such as Reed-Solomon or LDPC.
+Simulate the impact of nonlinearities in optical fibers.
 
 High error rate due to noise and dispersion.
 Poor eye diagram indicating significant inter-symbol interference.
