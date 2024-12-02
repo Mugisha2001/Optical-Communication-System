@@ -71,13 +71,9 @@ MATLAB or GNU Octave with the following toolboxes:
 Communications Toolbox
 Signal Processing Toolbox
 Installation
-Clone this repository:
 
-bash
-Copy code
-git clone https://github.com/username/optical-communication-fec.git
 cd optical-communication-fec
-Open MATLAB or GNU Octave and navigate to the src/ directory.
+Open MATLAB or GNU Octave and navigate to the src/ directory
 
 Usage
 Run the baseline system simulation:
